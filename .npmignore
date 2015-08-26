@@ -1,0 +1,7 @@
+node_modules/
+.svnignore
+.gitignore
+.npmignore
+*.iml
+.idea
+.git

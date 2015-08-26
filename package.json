@@ -1,0 +1,32 @@
+{
+  "name": "react-router-loader",
+  "version": "0.3.0",
+  "description": "Dynamically load react-router components on-demand",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uooo/react-router-loader.git"
+  },
+  "keywords": [
+    "react",
+    "router",
+    "proxy",
+    "loader",
+    "webpack",
+    "react-router"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uooo/react-router-loader/issues"
+  },
+  "dependencies": {
+    "loader-utils": "~0.2.6"
+  },
+  "homepage": "https://github.com/uooo/react-router-loader",
+  "peerDependencies": {
+    "react-router": ">0.13.0"
+  }
+}
