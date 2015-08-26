@@ -1,11 +1,12 @@
 {
   "name": "react-router-loader",
-  "version": "0.3.0",
+  "version": "0.4.0-beta1",
   "description": "Dynamically load react-router components on-demand",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "homepage": "https://github.com/uooo/react-router-loader",
   "repository": {
     "type": "git",
     "url": "https://github.com/uooo/react-router-loader.git"
@@ -23,10 +24,7 @@
     "url": "https://github.com/uooo/react-router-loader/issues"
   },
   "dependencies": {
-    "loader-utils": "~0.2.6"
-  },
-  "homepage": "https://github.com/uooo/react-router-loader",
-  "peerDependencies": {
+    "loader-utils": "~0.2.6",
     "react-router": ">0.13.0"
   }
 }
