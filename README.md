@@ -1,5 +1,7 @@
 # react-router-loader
 
+[![Join the chat at https://gitter.im/uooo/react-router-loader](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/uooo/react-router-loader?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Based on [react-proxy-loader](https://github.com/webpack/react-proxy-loader), adapted for [react-router](https://github.com/rackt/react-router) route handlers.
 
 [![NPM version][npm-badge]][npm] [![Gitter][gitter-badge]][gitter]
