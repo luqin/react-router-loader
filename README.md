@@ -11,20 +11,20 @@ Based on [react-proxy-loader](https://github.com/webpack/react-proxy-loader), ad
 [npm-badge]: https://img.shields.io/npm/v/react-router-loader.svg?style=flat-square
 [npm]: http://badge.fury.io/js/react-router-loader
 
-[travis-ci-image]: https://travis-ci.org/io3/react-router-loader.svg
-[travis-ci-url]: https://travis-ci.org/io3/react-router-loader
+[travis-ci-image]: https://travis-ci.org/luqin/react-router-loader.svg
+[travis-ci-url]: https://travis-ci.org/luqin/react-router-loader
 
 [gitter-badge]: https://img.shields.io/badge/gitter-join%20chat-f81a65.svg?style=flat-square
-[gitter]: https://gitter.im/uooo/react-router-loader?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+[gitter]: https://gitter.im/luqin/react-router-loader?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 
-[deps-badge]: https://david-dm.org/uooo/react-router-loader.svg
-[deps]: https://david-dm.org/uooo/react-router-loader
+[deps-badge]: https://david-dm.org/luqin/react-router-loader.svg
+[deps]: https://david-dm.org/luqin/react-router-loader
 
-[dev-deps-badge]: https://david-dm.org/uooo/react-router-loader/dev-status.svg
-[dev-deps]: https://david-dm.org/uooo/react-router-loader#info=devDependencies
+[dev-deps-badge]: https://david-dm.org/luqin/react-router-loader/dev-status.svg
+[dev-deps]: https://david-dm.org/luqin/react-router-loader#info=devDependencies
 
-[peer-deps-badge]: https://david-dm.org/uooo/react-router-loader/peer-status.svg
-[peer-deps]: https://david-dm.org/uooo/react-router-loader#info=peerDependencies
+[peer-deps-badge]: https://david-dm.org/luqin/react-router-loader/peer-status.svg
+[peer-deps]: https://david-dm.org/luqin/react-router-loader#info=peerDependencies
 
 ## Installation
 

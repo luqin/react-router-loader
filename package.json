@@ -1,15 +1,14 @@
 {
   "name": "react-router-loader",
-  "version": "0.4.0-beta1",
+  "version": "0.4.0",
   "description": "Dynamically load react-router components on-demand",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/io3/react-router-loader",
   "repository": {
     "type": "git",
-    "url": "https://github.com/io3/react-router-loader.git"
+    "url": "https://github.com/luqin/react-router-loader.git"
   },
   "keywords": [
     "react",
@@ -20,9 +19,6 @@
     "react-router"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/io3/react-router-loader/issues"
-  },
   "dependencies": {
     "loader-utils": "~0.2.6"
   },
