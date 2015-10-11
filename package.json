@@ -23,7 +23,9 @@
     "loader-utils": "~0.2.6"
   },
   "devDependencies": {
-    "react": ">=0.13.3",
-    "react-router": ">=0.13.0"
+    "react": "^0.13.3"
+  },
+  "peerDependencies": {
+    "react-router": "^1.0.0-rc1"
   }
 }
