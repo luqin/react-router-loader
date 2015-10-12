@@ -36,17 +36,18 @@ Which version to use depends on your version of `react-router`
 
 | react-router     | react-router-loader |
 | ---------------- | ------------------------- |
-| 0.13.x and above | 0.4.x                     |
+| 1.x and above | 0.4.x                     |
+| 0.13.x | 0.3.x                     |
 
 
 ## Usage
 
 [Documentation: Using loaders](http://webpack.github.io/docs/using-loaders.html)
 
-Use when requiring the `handler` for a `Route`, and the component will only be loaded when the route is rendered.
+Use when requiring the `component` for a `Route`, and the component will only be loaded when the route is rendered.
 
 ```js
-<Route name="user" handler={require('react-router!./User.jsx')} />
+<Route component={require('react-router!./User')} />
 ```
 
 Note that `willTransitionTo` and `willTransitionFrom` will still be called on the dynamically-loaded component.
@@ -57,10 +58,10 @@ Note that `willTransitionTo` and `willTransitionFrom` will still be called on th
 If you have nested or sibling Routes that you want to be loaded together, you can name the components using `?name=chunkName`
 
 ```js
-<Route name="user" handler={require('react-router?name=user!./User.jsx')}>
-    <Route name="details" handler={require('react-router?name=user!./UserDetails.jsx')}>
-    <Route name="settings" handler={require('react-router?name=user!./UserSettings.jsx')}>
-    <Route name="other" handler={require('react-router?name=user!./UserOther.jsx')}>
+<Route name="user" component={require('react-router?name=user!./User')}>
+    <Route name="details" component={require('react-router?name=user!./UserDetails')}>
+    <Route name="settings" component={require('react-router?name=user!./UserSettings')}>
+    <Route name="other" component={require('react-router?name=user!./UserOther')}>
 </Route>
 ```
 
