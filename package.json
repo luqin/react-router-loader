@@ -4,7 +4,7 @@
   "description": "Dynamically load react-router components on-demand",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": ""
   },
   "repository": {
     "type": "git",
