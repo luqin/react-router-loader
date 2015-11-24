@@ -47,26 +47,16 @@ Which version to use depends on your version of `react-router`
 Use when requiring the `component` for a `Route`, and the component will only be loaded when the route is rendered.
 
 ```js
-<Route component={require('react-router!./User')} />
+<Route component={require('react-router!./Component')} />
 ```
-
-Note that `willTransitionTo` and `willTransitionFrom` will still be called on the dynamically-loaded component.
-
 
 ### Named chunks
 
-If you have nested or sibling Routes that you want to be loaded together, you can name the components using `?name=chunkName`
+You can give the chunk a name with the `name` query parameter:
 
 ```js
-<Route name="user" component={require('react-router?name=user!./User')}>
-    <Route name="details" component={require('react-router?name=user!./UserDetails')}>
-    <Route name="settings" component={require('react-router?name=user!./UserSettings')}>
-    <Route name="other" component={require('react-router?name=user!./UserOther')}>
-</Route>
+<Route component={require('react-router?name=chunkName!./Component')} />
 ```
-
-This will cause the `user` chunk to be loaded if any of the three user pages is loaded.  It will also mean that you won't need two separate calls for the base class and child class.
-
 
 # License
 
