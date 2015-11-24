@@ -28,7 +28,10 @@ Based on [react-proxy-loader](https://github.com/webpack/react-proxy-loader), ad
 
 ## Installation
 
-`npm install react-router-loader`
+
+```sh
+npm install react-router-loader --save-dev
+```
 
 ## Dependencies
 
