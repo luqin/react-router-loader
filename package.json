@@ -20,12 +20,13 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "loader-utils": "~0.2.6"
+    "loader-utils": "~0.2.6",
+    "object-assign": "^4.0.1"
   },
   "devDependencies": {
     "react": "^0.14.3"
   },
   "peerDependencies": {
-    "react-router": "^1.0.0-rc1"
+    "react-router": "^1.0.0 || ^1.0.0-rc1"
   }
 }

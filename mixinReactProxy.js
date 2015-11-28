@@ -1,11 +1,4 @@
-// Shorter version of https://github.com/sindresorhus/object-assign/blob/master/index.js
-var assign = Object.assign || function (target, source) {
-    var keys = Object.keys(Object(source));
-    for (var i = 0; i < keys.length; i++) {
-      target[keys[i]] = source[keys[i]];
-    }
-    return target;
-  };
+var assign = require('object-assign');
 
 module.exports = function (React, desc) {
   desc.displayName = "ReactRouterProxy";
