@@ -9,7 +9,7 @@ Based on [react-proxy-loader](https://github.com/webpack/react-proxy-loader), ad
 [![peerDependency Status][peer-deps-badge]][peer-deps]
 
 [npm-badge]: https://img.shields.io/npm/v/react-router-loader.svg?style=flat-square
-[npm]: http://badge.fury.io/js/react-router-loader
+[npm]: https://www.npmjs.com/package/react-router-loader
 
 [travis-ci-image]: https://travis-ci.org/luqin/react-router-loader.svg
 [travis-ci-url]: https://travis-ci.org/luqin/react-router-loader
