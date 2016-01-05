@@ -1,6 +1,6 @@
 # react-router-loader
 
-Based on [react-proxy-loader](https://github.com/webpack/react-proxy-loader), adapted for [react-router](https://github.com/rackt/react-router) route handlers.
+Based on [react-router-proxy-loader](https://github.com/odysseyscience/react-router-proxy-loader) and [react-proxy-loader](https://github.com/webpack/react-proxy-loader), adapted for [react-router](https://github.com/rackt/react-router) route handlers.
 
 [![NPM version][npm-badge]][npm] [![Build Status][travis-ci-image]][travis-ci-url] [![Gitter][gitter-badge]][gitter]
 
