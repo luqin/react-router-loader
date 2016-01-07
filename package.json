@@ -1,6 +1,6 @@
 {
   "name": "react-router-loader",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Dynamically load react-router components on-demand",
   "main": "index.js",
   "scripts": {
@@ -26,6 +26,6 @@
     "react": "^0.14.5"
   },
   "peerDependencies": {
-    "react-router": "^2.0.0 || ^2.0.0-rc1"
+    "react-router": "^1.0.0 || ^2.0.0 || ^2.0.0-rc1"
   }
 }
