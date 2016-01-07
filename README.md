@@ -2,7 +2,7 @@
 
 Based on [react-router-proxy-loader](https://github.com/odysseyscience/react-router-proxy-loader) and [react-proxy-loader](https://github.com/webpack/react-proxy-loader), adapted for [react-router](https://github.com/rackt/react-router) route handlers.
 
-[![NPM version][npm-badge]][npm] [![Build Status][travis-ci-image]][travis-ci-url] [![Gitter][gitter-badge]][gitter]
+[![NPM version][npm-badge]][npm] [![Build Status][travis-ci-image]][travis-ci-url]
 
 [![Dependency Status][deps-badge]][deps]
 [![devDependency Status][dev-deps-badge]][dev-deps]
@@ -13,9 +13,6 @@ Based on [react-router-proxy-loader](https://github.com/odysseyscience/react-rou
 
 [travis-ci-image]: https://travis-ci.org/luqin/react-router-loader.svg
 [travis-ci-url]: https://travis-ci.org/luqin/react-router-loader
-
-[gitter-badge]: https://img.shields.io/badge/gitter-join%20chat-f81a65.svg?style=flat-square
-[gitter]: https://gitter.im/luqin/react-router-loader?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 
 [deps-badge]: https://david-dm.org/luqin/react-router-loader.svg
 [deps]: https://david-dm.org/luqin/react-router-loader
