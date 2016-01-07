@@ -13,20 +13,20 @@
   "keywords": [
     "react",
     "router",
+    "react-router",
     "proxy",
     "loader",
-    "webpack",
-    "react-router"
+    "webpack"
   ],
   "license": "MIT",
   "dependencies": {
-    "loader-utils": "~0.2.6",
+    "loader-utils": "~0.2.12",
     "object-assign": "^4.0.1"
   },
   "devDependencies": {
-    "react": "^0.14.3"
+    "react": "^0.14.5"
   },
   "peerDependencies": {
-    "react-router": "^1.0.0 || ^1.0.0-rc1"
+    "react-router": "^2.0.0 || ^2.0.0-rc1"
   }
 }
