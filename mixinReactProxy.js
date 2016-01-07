@@ -1,11 +1,9 @@
-var assign = require('object-assign');
-
 module.exports = function (React, desc) {
   desc.displayName = "ReactRouterProxy";
   desc.render = function () {
     var Component = this.state.component;
     if (Component) {
-      return React.createElement(Component, assign({ref: "componentProxy"}, this.props), this.props.children);
+      return React.createElement(Component, this.props, this.props.children);
     } else if (this.renderUnavailable) {
       return this.renderUnavailable();
     } else {

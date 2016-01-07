@@ -20,8 +20,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "loader-utils": "~0.2.12",
-    "object-assign": "^4.0.1"
+    "loader-utils": "~0.2.12"
   },
   "devDependencies": {
     "react": "^0.14.5"
