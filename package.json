@@ -1,6 +1,6 @@
 {
   "name": "react-router-loader",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Dynamically load react-router components on-demand",
   "main": "index.js",
   "scripts": {
