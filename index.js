@@ -1,6 +1,5 @@
 /**
- * Taken and modified from react-proxy-loader to support react-router
- * willTransitionTo hooks.  See "BEGIN CHANGE" - "END CHANGE" below.
+ * Taken and modified from react-router-proxy-loader to support react-router
  */
 var loaderUtils = require("loader-utils");
 
@@ -14,15 +13,12 @@ module.exports.pitch = function (remainingRequest) {
   return [
     'var React = require("react");',
     'var component;',
-    'function requireComponent() {',
-    '    var module = require(' + JSON.stringify(moduleRequest) + ');',
-    '    return module.__esModule ? module.default : module;',
-    '}',
     'var desc = {',
     '    loadComponent: function(callback) {',
     '        if(!component) {',
     '            require.ensure([], function() {',
-    '                component = requireComponent();',
+    '                var module = require(' + JSON.stringify(moduleRequest) + ');',
+    '                component = module.__esModule ? module.default : module;',
     '                if(callback) callback(component);',
     '            }' + (query.name ? ', ' + JSON.stringify(query.name) : '') + ');',
     '        } else if(callback) callback(component);',
