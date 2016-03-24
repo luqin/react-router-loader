@@ -58,6 +58,55 @@ You can give the chunk a name with the `name` query parameter:
 <Route component={require('react-router?name=chunkName!./Component')} />
 ```
 
+#### Named chunks with placeholders (0.5.1 and above)
+
+You can also use the [standard Webpack placeholders](https://github.com/webpack/loader-utils#interpolatename) in the name of your chunks.
+
+```js
+<Route path="details" component={require('react-router-proxy?name=[name]!./UserDetails.jsx')}>
+<Route path="settings" component={require('react-router-proxy?name=[name]!./UserSettings.jsx')}>
+<Route path="other" component={require('react-router-proxy?name=[name]!./UserOther.jsx')}>
+```
+
+Would generate three chunks, exported in `userdetails.js`, `usersettings.js` and so on.
+Using this approach allows you to setup your loader globally through an exclude/include rule in your `webpack.config.js`.
+To avoid conflicts it may be best to prefix your `name` with a subfolder name, such as `routes/`:
+
+```js
+loaders: [
+    {
+        test: /\.js$/,
+        exclude: /src\/Pages/,
+        loader: 'babel',
+    },
+    {
+        test: /\.js$/,
+        include: /src\/Pages/,
+        loaders: ['react-router-proxy?name=routes/[name]', 'babel'],
+    }
+],
+```
+
+This has the advantage of making your router a lot leaner:
+
+```js
+<Route path="details" component={require('./UserDetails.jsx')}>
+<Route path="settings" component={require('./UserSettings.jsx')}>
+<Route path="other" component={require('./UserOther.jsx')}>
+```
+
+The generated files would then go into `routes/userdetails`, `routes/usersettings` etc.
+
+## Changelog
+
+##### 0.5.4
+
+ - Added named chunks with placeholders
+
+##### 0.5.0
+
+ - Upgraded to react-router 2.x
+
 # License
 
 MIT (http://www.opensource.org/licenses/mit-license.php)
