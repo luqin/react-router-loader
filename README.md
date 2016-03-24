@@ -36,7 +36,6 @@ Which version to use depends on your version of `react-router`
 
 | react-router     | react-router-loader |
 | ---------------- | ------------------------- |
-| 0.13.x | 0.3.x                     |
 | 1.x | 0.4.x                     |
 | 2.x and above | 0.5.x                     |
 
