@@ -3,8 +3,7 @@
  */
 var loaderUtils = require("loader-utils");
 
-module.exports = function () {
-};
+module.exports = function () {};
 module.exports.pitch = function (remainingRequest) {
   this.cacheable && this.cacheable();
   var query = loaderUtils.parseQuery(this.query);
