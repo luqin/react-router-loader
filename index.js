@@ -8,6 +8,10 @@ module.exports = function () {
 module.exports.pitch = function (remainingRequest) {
   this.cacheable && this.cacheable();
   var query = loaderUtils.parseQuery(this.query);
+  var chunkName = loaderUtils.interpolateName(this, query.name, {
+      context: this.options.context,
+      content: remainingRequest,
+  }).toLowerCase();
 
   var moduleRequest = "!!" + remainingRequest;
   return [
@@ -20,7 +24,7 @@ module.exports.pitch = function (remainingRequest) {
     '                var module = require(' + JSON.stringify(moduleRequest) + ');',
     '                component = module.__esModule ? module.default : module;',
     '                if(callback) callback(component);',
-    '            }' + (query.name ? ', ' + JSON.stringify(query.name) : '') + ');',
+    '            }' + (query.name ? ', ' + JSON.stringify(chunkName) : '') + ');',
     '        } else if(callback) callback(component);',
     '        return component;',
     '    }',
