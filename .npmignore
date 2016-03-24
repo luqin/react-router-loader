@@ -1,7 +1,9 @@
-node_modules/
-.svnignore
+.editorconfig
 .gitignore
-.npmignore
+.travis.yml
 *.iml
 .idea
 .git
+
+node_modules/
+CHANGELOG.md
