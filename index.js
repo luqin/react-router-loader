@@ -3,16 +3,25 @@
  */
 var loaderUtils = require("loader-utils");
 
+var defaultQueryName;
+
 module.exports = function () {};
+module.exports.setDefaultQueryName = function (name) {
+  defaultQueryName = name;
+}
 module.exports.pitch = function (remainingRequest) {
   this.cacheable && this.cacheable();
   var query = loaderUtils.parseQuery(this.query);
-  var chunkName = loaderUtils.interpolateName(this, query.name, {
-      context: this.options.context,
+  var chunkName;
+  if (query.name || defaultQueryName) {
+    chunkName = loaderUtils.interpolateName(this, query.name || defaultQueryName, {
+      context: query.context || this.options.context,
       content: remainingRequest,
-  }).toLowerCase();
+    });
+  }
+  var chunkNameParam = !!chunkName ? (', ' + JSON.stringify(chunkName)) : '';
 
-  var moduleRequest = "!!" + remainingRequest;
+  var moduleRequest = '!!' + remainingRequest;
   return [
     'var React = require("react");',
     'var component;',
@@ -23,7 +32,7 @@ module.exports.pitch = function (remainingRequest) {
     '                var module = require(' + JSON.stringify(moduleRequest) + ');',
     '                component = module.__esModule ? module.default : module;',
     '                if(callback) callback(component);',
-    '            }' + (query.name ? ', ' + JSON.stringify(chunkName) : '') + ');',
+    '            }' + chunkNameParam + ');',
     '        } else if(callback) callback(component);',
     '        return component;',
     '    }',
