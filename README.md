@@ -58,7 +58,14 @@ You can give the chunk a name with the `name` query parameter:
 <Route component={require('react-router?name=chunkName!./Component')} />
 ```
 
-#### Named chunks with placeholders (0.5.1 and above)
+#### Default global named chunks (0.5.4 and above)
+
+```js
+import ReactRouterLoader from 'react-router-loader';
+ReactRouterLoader.setDefaultQueryName('[path][name]xyz');
+```
+
+#### Named chunks with placeholders (0.5.4 and above)
 
 You can also use the [standard Webpack placeholders](https://github.com/webpack/loader-utils#interpolatename) in the name of your chunks.
 
@@ -97,16 +104,6 @@ This has the advantage of making your router a lot leaner:
 
 The generated files would then go into `routes/userdetails`, `routes/usersettings` etc.
 
-## Changelog
-
-##### 0.5.4
-
- - Added named chunks with placeholders
-
-##### 0.5.0
-
- - Upgraded to react-router 2.x
-
-# License
+## License
 
 MIT (http://www.opensource.org/licenses/mit-license.php)
