@@ -70,9 +70,9 @@ ReactRouterLoader.setDefaultQueryName('[path][name]xyz');
 You can also use the [standard Webpack placeholders](https://github.com/webpack/loader-utils#interpolatename) in the name of your chunks.
 
 ```js
-<Route path="details" component={require('react-router-proxy?name=[name]!./UserDetails.jsx')}>
-<Route path="settings" component={require('react-router-proxy?name=[name]!./UserSettings.jsx')}>
-<Route path="other" component={require('react-router-proxy?name=[name]!./UserOther.jsx')}>
+<Route path="details" component={require('react-router?name=[name]!./UserDetails.jsx')}>
+<Route path="settings" component={require('react-router?name=[name]!./UserSettings.jsx')}>
+<Route path="other" component={require('react-router?name=[name]!./UserOther.jsx')}>
 ```
 
 Would generate three chunks, exported in `userdetails.js`, `usersettings.js` and so on.
@@ -89,7 +89,7 @@ loaders: [
     {
         test: /\.js$/,
         include: /src\/Pages/,
-        loaders: ['react-router-proxy?name=routes/[name]', 'babel'],
+        loaders: ['react-router?name=routes/[name]', 'babel'],
     }
 ],
 ```
