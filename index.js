@@ -30,7 +30,7 @@ module.exports.pitch = function (remainingRequest) {
     '        if(!component) {',
     '            require.ensure([], function() {',
     '                var module = require(' + JSON.stringify(moduleRequest) + ');',
-    '                component = module.__esModule ? module.default : module;',
+    '                component = module.__esModule ? module["default"] : module;',
     '                if(callback) callback(component);',
     '            }' + chunkNameParam + ');',
     '        } else if(callback) callback(component);',
